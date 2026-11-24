@@ -138,7 +138,6 @@
 ```
 Sichuan-WebGIS/
 ├── backend/                    # Express后端原型
-├── docs/                       # 作业文档和AI协作记录
 ├── public/                     # 公共静态资源
 ├── src/                        # 源代码
 │   ├── assets/                 # 图片、图标等静态资源
