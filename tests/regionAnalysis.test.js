@@ -29,7 +29,7 @@ const records = [
     灾害体编号: "A-002",
     灾害体名称: "测试泥石流",
     灾害体类型: "泥石流",
-    地震烈度: "Ⅶ",
+    地震烈度: "Ⅺ",
     威胁人口: "8",
     威胁财产: null,
   }),
@@ -58,10 +58,10 @@ test("正确汇总类型、烈度、人口、财产和高风险点", () => {
   const summary = summarizeRegionFeatures(selected);
   assert.equal(summary.total, 2);
   assert.deepEqual(summary.typeCounts, { 滑坡: 1, 泥石流: 1 });
-  assert.deepEqual(summary.intensityCounts, { Ⅷ: 1, Ⅶ: 1 });
+  assert.deepEqual(summary.intensityCounts, { Ⅷ: 1, Ⅺ: 1 });
   assert.equal(summary.threatPopulation, 20);
   assert.equal(summary.threatProperty, 3.5);
-  assert.equal(summary.highRiskCount, 1);
+  assert.equal(summary.highRiskCount, 2);
 });
 
 test("空结果返回零值统计", () => {

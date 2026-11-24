@@ -1,6 +1,17 @@
 import { featureCollection, pointsWithinPolygon } from "@turf/turf";
 
-const HIGH_RISK_INTENSITIES = new Set(["Ⅷ", "Ⅸ", "Ⅹ", "VIII", "IX", "X"]);
+const HIGH_RISK_INTENSITIES = new Set([
+  "Ⅷ",
+  "Ⅸ",
+  "Ⅹ",
+  "Ⅺ",
+  "Ⅻ",
+  "VIII",
+  "IX",
+  "X",
+  "XI",
+  "XII",
+]);
 
 function toFiniteNumber(value) {
   if (typeof value === "number") return Number.isFinite(value) ? value : 0;
